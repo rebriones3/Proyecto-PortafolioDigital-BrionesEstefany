@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruth Briones · Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap: solo se usa para el carrusel de fotos de la sección Galería -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a href="#inicio" class="brand" aria-label="Ir al inicio">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+              fill="#C9457C"
+            />
+          </svg>
+          Estefany Briones
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+        <nav
+          class="main-nav"
+          id="menu-principal"
+          aria-label="Navegación principal"
+        >
+          <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#vida-activa">Vida activa</a></li>
+            <li><a href="#fe-musica">Fe &amp; música</a></li>
+            <li><a href="#mi-versiculo">Mi versículo</a></li>
+            <li><a href="#tiempo-libre">Tiempo libre</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <span class="blob blob--a" aria-hidden="true"></span>
+        <span class="blob blob--b" aria-hidden="true"></span>
+        <div class="wrap">
+          <div class="hero-copy">
+            <span class="eyebrow">
+              <svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                />
+              </svg>
+              Portafolio personal
+            </span>
+            <h1 id="hero-title">Ruth Estefany <em>Briones Moreira</em></h1>
+            <p class="role">
+              Estudiante de Ingeniería en Tecnologias de la Información
+              apasionada por el diseño, la tecnología y la creatividad. Aquí
+              encontrarás un poco de mi mundo: mis hobbies, mi fe y todo lo que
+              me inspira.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#sobre-mi">Conóceme</a>
+              <a class="btn btn-ghost" href="#contacto">Escríbeme</a>
+            </div>
+          </div>
+          <figure class="hero-figure">
+            <div class="frame">
+              <img
+                src="img/estefi3.png"
+                alt="Ruth Briones sonriendo, con cabello suelto y fondo neutro"
+              />
+            </div>
+            <figcaption>💻 Futura Ingeniera</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- MI VERSICULO (sección nueva) -->
+      <section id="mi-versiculo" aria-labelledby="versiculo-title">
+        <div class="wrap">
+          <div class="verse-card" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Mi versículo lema</span
+            >
+            <span class="verse-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote class="verse-quote">
+              <p>
+                Bástate mi gracia; porque mi poder se perfecciona en la
+                debilidad. Por tanto, de buena gana me gloriaré más bien en mis
+                debilidades, para que repose sobre mí el poder de Cristo.
+              </p>
+              <footer>2 Corintios 12:9</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE MI -->
+      <section id="sobre-mi" aria-labelledby="sobre-mi-title">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Sobre mí</span
+            >
+            <h2 id="sobre-mi-title">Lo que me mueve</h2>
+            <p>
+              Me gusta el diseño, el desarrollo web, la fotografía y viajar.
+              También disfruto servir a Dios, porque es una parte muy importante
+              de mi vida. Siempre estoy aprendiendo cosas nuevas y buscando
+              formas de crecer tanto en lo personal como en lo profesional.
+            </p>
+          </div>
+
+          <ul class="about-grid" data-reveal>
+            <li class="interest-card">
+              <div class="ico">🎨</div>
+              <h3>Diseño y Edicion</h3>
+            </li>
+            <li class="interest-card">
+              <div class="ico">🌐</div>
+              <h3>Desarrollo web</h3>
+            </li>
+            <li class="interest-card">
+              <div class="ico">📸</div>
+              <h3>Fotografía</h3>
+            </li>
+            <li class="interest-card">
+              <div class="ico">🗺️</div>
+              <h3>Viajes</h3>
+            </li>
+            <li class="interest-card">
+              <div class="ico">🙏</div>
+              <h3>Servicio a Dios</h3>
+            </li>
+          </ul>
+
+          <p class="about-text" data-reveal>
+            Me considero una persona creativa, responsable y siempre con ganas
+            de aprender. Disfruto asumir nuevos retos y seguir desarrollando
+            habilidades que me ayuden a crecer tanto en lo personal como en lo
+            profesional.
+          </p>
+        </div>
+      </section>
+
+      <!-- GALERIA (sección nueva: carrusel de fotos con Bootstrap) -->
+      <section id="galeria" aria-labelledby="galeria-title">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Galería</span
+            >
+            <h2 id="galeria-title">Un vistazo a mi mundo</h2>
+            <p>Algunos momentos que me representan.</p>
+          </div>
+
+          <!--
+           CARRUSEL DE FOTOS
+          -->
+          <div
+            id="carouselRuth"
+            class="carousel slide gallery-carousel"
+            data-reveal
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselRuth"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Foto 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselRuth"
+                data-bs-slide-to="1"
+                aria-label="Foto 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselRuth"
+                data-bs-slide-to="2"
+                aria-label="Foto 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/IMG_2973.JPG.jpeg"
+                  class="d-block w-100"
+                  alt="Foto de Ruth Briones 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Diseñando</h5>
+                  <p>Uno de mis momentos favoritos: crear algo nuevo.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/IMG_7482.JPG.jpeg"
+                  class="d-block w-100"
+                  alt="Foto de Ruth Briones 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>De viaje</h5>
+                  <p>Explorando lugares nuevos, cámara en mano.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/Enseñando.jpeg"
+                  class="d-block w-100"
+                  alt="Foto de Ruth Briones 3"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>En comunidad</h5>
+                  <p>Compartiendo mi fe y mi tiempo con otros.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselRuth"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselRuth"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOBBIES -->
+      <section
+        id="hobbies"
+        class="section-tint"
+        aria-labelledby="hobbies-title"
+      >
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Hobbies &amp; habilidades</span
+            >
+            <h2 id="hobbies-title">En mi tiempo libre...</h2>
+            <p>
+              Entre mis pasatiempos favoritos está el diseño web: me encanta ver
+              videos, aprender, crear páginas, practicar y jugar con colores
+              usando Canva.
+            </p>
+          </div>
+
+          <ul class="hobby-grid" data-reveal>
+            <li class="hobby-card">
+              <div class="ico-circle">🖌️</div>
+              <h3>Diseño web</h3>
+              <p>
+                Creo páginas, experimento con colores y practico constantemente
+                usando Canva.
+              </p>
+            </li>
+            <li class="hobby-card">
+              <div class="ico-circle">🎬</div>
+              <h3>Edición de video</h3>
+              <p>Edito y doy forma a videos, cuidando cada detalle visual.</p>
+            </li>
+            <li class="hobby-card">
+              <div class="ico-circle">📷</div>
+              <h3>Fotografía</h3>
+              <p>
+                Me gusta capturar momentos y contar historias a través de
+                imágenes.
+              </p>
+            </li>
+            <li class="hobby-card">
+              <div class="ico-circle">🎹</div>
+              <h3>Piano</h3>
+              <p>
+                Tocar piano es uno de mis espacios favoritos para relajarme.
+              </p>
+            </li>
+            <li class="hobby-card">
+              <div class="ico-circle">🖍️</div>
+              <h3>Diseño gráfico</h3>
+              <p>
+                Diseño cosas nuevas todo el tiempo, dejando volar la
+                creatividad.
+              </p>
+            </li>
+            <li class="hobby-card">
+              <div class="ico-circle">⛪</div>
+              <h3>Predicar</h3>
+              <p>Comparto mi fe predicando en la iglesia.</p>
+            </li>
+          </ul>
+
+          <span class="career-tag" data-reveal
+            >🎓 Carrera: Systems Engineering student</span
+          >
+        </div>
+      </section>
+
+      <!-- VIDA ACTIVA -->
+      <section id="vida-activa" aria-labelledby="vida-activa-title">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Vida activa</span
+            >
+            <h2 id="vida-activa-title">Deportes y aire libre</h2>
+          </div>
+
+          <div class="active-layout">
+            <ul
+              class="tag-cloud"
+              data-reveal
+              aria-label="Deportes y actividades favoritas"
+            >
+              <li>🧘 Yoga</li>
+              <li>🎾 Tenis</li>
+              <li>🏊 Natación</li>
+              <li>⚽ Fútbol</li>
+              <li>🏖️ Playa en familia</li>
+              <li>🌊 Río en Archidona</li>
+            </ul>
+            <article class="active-note" data-reveal>
+              <h3>Kevin es muy diferente a mí</h3>
+              <p>
+                Aunque compartimos varios intereses, en los deportes somos
+                bastante distintos — y eso hace que siempre tengamos algo nuevo
+                que aprender el uno del otro, ya sea nadando en el río de
+                Archidona o jugando un partido de fútbol.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FE Y MUSICA -->
+      <section id="fe-musica" aria-labelledby="fe-musica-title">
+        <div class="wrap">
+          <div class="faith-wrap" data-reveal>
+            <div>
+              <span class="eyebrow"
+                ><svg viewBox="0 0 24 24" fill="#F1C77E" aria-hidden="true">
+                  <path
+                    d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                  /></svg
+                >Fe &amp; música</span
+              >
+              <h2 id="fe-musica-title">Lo que llena mi corazón</h2>
+              <ul class="faith-list">
+                <li><span class="dot"></span>Escuchar música de adoración</li>
+                <li><span class="dot"></span>Ir a la iglesia</li>
+                <li><span class="dot"></span>Orar</li>
+                <li><span class="dot"></span>Escuchar música</li>
+                <li><span class="dot"></span>Leer la Biblia</li>
+              </ul>
+            </div>
+            <blockquote>
+              Mi libro favorito
+              <footer>— La Biblia</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- MIS VIDEOS CORTOS -->
+      <section id="videos-cortos" aria-labelledby="videos-cortos-title">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Videos cortos</span
+            >
+            <h2 id="videos-cortos-title">Un poco de mí, en movimiento</h2>
+            <p>Algunos momentos cortos que me representan.</p>
+          </div>
+
+          <!--
+      Cuadrícula de videos cortos.
+      Para agregar o quitar un video: copia o borra un bloque completo
+      ".short-video" (desde <li class="short-video"> hasta </li>).
+      Cada uno tiene su propio título — cámbialo o bórralo si no lo quieres.
+    -->
+          <ul class="shorts-grid" data-reveal>
+            <li class="short-video">
+              <div class="video-card video-card--vertical">
+                <div class="video-frame video-frame--vertical">
+                  <video controls playsinline loop preload="metadata">
+                    <source src="videos/camara.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video. Puedes
+                    <a href="videos/camara.mp4">descargarlo aquí</a>.
+                  </video>
+                </div>
+              </div>
+              <h3>Diseñando</h3>
+            </li>
+
+            <li class="short-video">
+              <div class="video-card video-card--vertical">
+                <div class="video-frame video-frame--vertical">
+                  <video controls playsinline preload="metadata">
+                    <source src="videos/corto-2.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video. Puedes
+                    <a href="videos/corto-2.mp4">descargarlo aquí</a>.
+                  </video>
+                </div>
+              </div>
+              <h3>De viaje</h3>
+            </li>
+
+            <li class="short-video">
+              <div class="video-card video-card--vertical">
+                <div class="video-frame video-frame--vertical">
+                  <video controls playsinline preload="metadata">
+                    <source src="videos/corto-3.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video. Puedes
+                    <a href="videos/corto-3.mp4">descargarlo aquí</a>.
+                  </video>
+                </div>
+              </div>
+              <h3>Tocando piano</h3>
+            </li>
+
+            <li class="short-video">
+              <div class="video-card video-card--vertical">
+                <div class="video-frame video-frame--vertical">
+                  <video controls playsinline preload="metadata">
+                    <source src="videos/corto-4.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video. Puedes
+                    <a href="videos/corto-4.mp4">descargarlo aquí</a>.
+                  </video>
+                </div>
+              </div>
+              <h3>En la iglesia</h3>
+            </li>
+
+            <li class="short-video">
+              <div class="video-card video-card--vertical">
+                <div class="video-frame video-frame--vertical">
+                  <video controls playsinline preload="metadata">
+                    <source src="videos/corto-5.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video. Puedes
+                    <a href="videos/corto-5.mp4">descargarlo aquí</a>.
+                  </video>
+                </div>
+              </div>
+              <h3>Con Pato</h3>
+            </li>
+
+            <li class="short-video">
+              <div class="video-card video-card--vertical">
+                <div class="video-frame video-frame--vertical">
+                  <video controls playsinline preload="metadata">
+                    <source src="videos/corto-6.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video. Puedes
+                    <a href="videos/corto-6.mp4">descargarlo aquí</a>.
+                  </video>
+                </div>
+              </div>
+              <h3>En el río</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TIEMPO LIBRE -->
+      <section
+        id="tiempo-libre"
+        class="section-tint"
+        aria-labelledby="tiempo-libre-title"
+      >
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Tiempo libre</span
+            >
+            <h2 id="tiempo-libre-title">Así disfruto mis días</h2>
+          </div>
+
+          <ul class="freetime-grid" data-reveal>
+            <li class="freetime-card highlight">
+              <div class="ico">🦜</div>
+              <h3>Pato, mi loro</h3>
+              <p>Me encantan los animales, y Pato es parte de la familia.</p>
+            </li>
+            <li class="freetime-card">
+              <div class="ico">🍳</div>
+              <h3>Cocinar</h3>
+              <p>Cocino, incluso en la iglesia, para compartir con otros.</p>
+            </li>
+            <li class="freetime-card">
+              <div class="ico">📚</div>
+              <h3>Enseñar</h3>
+              <p>Enseño a jóvenes, algo que disfruto profundamente.</p>
+            </li>
+            <li class="freetime-card">
+              <div class="ico">😴</div>
+              <h3>Descansar</h3>
+              <p>Un buen descanso siempre es bienvenido.</p>
+            </li>
+            <li class="freetime-card">
+              <div class="ico">🌊</div>
+              <h3>Ir al río</h3>
+              <p>Uno de mis lugares favoritos para desconectar.</p>
+            </li>
+            <li class="freetime-card">
+              <div class="ico">🏠</div>
+              <h3>Quedarme en casa</h3>
+              <p>A veces lo mejor es simplemente estar en casa.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MUJERES QUE INSPIRAN MI FE -->
+      <section
+        id="inspiracion-fe"
+        class="section-tint"
+        aria-labelledby="inspiracion-fe-title"
+      >
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><svg viewBox="0 0 24 24" fill="#C9457C" aria-hidden="true">
+                <path
+                  d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 4 7 4c2 0 4 1.2 5 3 1-1.8 3-3 5-3 4 0 6.5 4.5 4.5 8.5C19 16.65 12 21 12 21z"
+                /></svg
+              >Fe &amp; música</span
+            >
+            <h2 id="inspiracion-fe-title">Mujeres que inspiran mi caminar</h2>
+            <p>
+              Dos mujeres de fe y oración que han marcado mi vida espiritual:
+              una predicación que admiro profundamente, y una canción que se ha
+              vuelto parte de mis momentos de adoración.
+            </p>
+          </div>
+
+          <div class="video-media-grid">
+            <!-- Predicación -->
+            <div class="video-group" data-reveal>
+              <h3>Hna. María Luz de Galvis</h3>
+              <p class="video-caption">
+                Admiro mucho su disciplina para la oración y su dedicación al
+                servicio de Dios. Sus enseñanzas han sido de bendición para mi
+                vida y espero que este mensaje también pueda serlo para ti.
+              </p>
+              <div class="video-card" data-reveal>
+                <div class="video-frame">
+                  <iframe
+                    src="https://www.youtube.com/embed/ApEB9Ko5nEI?si=M8JQqy3v_93weL12"
+                    title="Predicación de la hermana María Luz de Galvis"
+                    frameborder="0"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                      web-share;
+                    "
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Alabanza -->
+            <div class="video-group" data-reveal>
+              <h3>Sin tu amor</h3>
+              <p class="video-caption">
+                Esta canción se ha vuelto parte de mis momentos de adoración.
+                Espero que su letra también hable a tu corazón. Interpretada por
+                la Hna. Roxana Sucuy, una mujer de fe y de oración — la autoría
+                original de la canción no le pertenece, pero amo cómo la canta.
+              </p>
+              <div class="video-card video-card--vertical" data-reveal>
+                <div class="video-frame video-frame--vertical">
+                  <video controls loop playsinline preload="metadata">
+                    <source src="videos/alabanzafav.mp4" type="video/mp4" />
+                    Tu navegador no puede reproducir este video. Puedes
+                    <a href="videos/alabanzafav.mp4">descargarlo aquí</a>.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACTO -->
+      <section id="contacto" aria-labelledby="contacto-title">
+        <div class="wrap">
+          <div class="contact" data-reveal>
+            <h2 id="contacto-title">¿Tienes preguntas?</h2>
+            <p>
+              Gracias por conocer un poco más sobre mí. Si quieres conectar o
+              conversar, no dudes en escribirme.
+            </p>
+            <div class="contact-links">
+              <a class="btn btn-primary" href="mailto:ruth.briones@example.com"
+                >Escríbeme un correo</a
+              >
+              <a class="btn btn-ghost" href="#inicio">Volver arriba</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Ruth Estefany Briones Moreira · Hecho con 🌸
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS: necesario para que funcione el carrusel de la Galería -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // mobile nav toggle
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".main-nav");
+      if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+          const isOpen = nav.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", isOpen);
+        });
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            nav.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      // scroll reveal (progressive enhancement)
+      const revealEls = document.querySelectorAll("[data-reveal]");
+      if ("IntersectionObserver" in window && revealEls.length) {
+        document.body.classList.add("js-ready");
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 },
+        );
+        revealEls.forEach((el) => io.observe(el));
+      }
+    </script>
+  </body>
+</html>
